@@ -32,7 +32,7 @@ RUN \
   mkdir -p /app && \
   curl -o \
   /tmp/unifi.deb -L \
-    "https://dl.ui.com/unifi/${UNIFI_VERSION}/unifi_sysvinit_all.deb" && \
+    "https://dl.ui.com/unifi/8.0.2-fdee17d54f/unifi_sysvinit_all.deb" && \
   dpkg -i --ignore-depends=mongodb-org-server /tmp/unifi.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
