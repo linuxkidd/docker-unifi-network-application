@@ -32,7 +32,7 @@ RUN \
   mkdir -p /app && \
   curl -o \
   /tmp/unifi.deb -L \
-    "https://dl.ui.com/unifi/8.0.2-fdee17d54f/unifi_sysvinit_all.deb" && \
+    "https://fw-download.ubnt.com/data/unifi-controller/6b76-debian-8.0.6-bf5883fe-46a0-416b-9bc0-61214a7c2d52.deb" && \
   dpkg -i --ignore-depends=mongodb-org-server /tmp/unifi.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
